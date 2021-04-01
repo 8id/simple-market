@@ -1,0 +1,275 @@
+* {
+    margin: 0px;
+    direction: ltr;
+    cursor: grab;
+
+}
+
+header h1 {
+    color: #eeeeee;
+    background-color: #d65a31;
+    text-transform: uppercase; /* للتحكم بشكل النص */
+    letter-spacing: 2px;      /* المسافة بين كل حرف وحرف */
+
+    /* top right bottom left */
+    padding: 10px;             /* الهوامش الداخلية */
+    padding-left: 40px;        /* هامش من اليسار */ 
+
+    margin: 0px;               /* الهوامش الخارجية */
+}
+
+/* start nav*/
+
+nav {
+    color: #eeeeee;
+    background-color: #393e46;
+    padding: 10px;
+    margin: 0px;
+    border-bottom: 2px dashed #d65a31;
+    font-family: 'Cairo', sans-serif;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: #d65a31;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
+/* end nav */
+
+main{
+    width: 100%;
+    height: 600px;
+}
+
+main .main-image {
+    background-image: url("../images/main-photo1.jpg");
+    background-size: cover;              /* حجم الصورة */
+    background-repeat: no-repeat;        /* للتكرار */
+    /* background-attachment: fixed; */  /* للتحرك مع الموقع مثل السكرول */
+    background-position: center ;        /* مكان الصورة */
+    width: 100%;
+    height: 100%;
+}
+
+/* start article */
+article {
+    margin-top: 10px;
+    
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0px;
+    margin-top: 40px;
+    background-color: #9ddfd3;
+    padding: 10px 10px;
+    border-bottom: 2px solid #d65a31;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+article section {
+    background-color: rgb(231, 231, 231);
+    width: calc((100% - 180px) / 4);
+    height: 630px;
+    text-align: center;
+    border-bottom: 2px solid #d65a31;
+    border-right: 2px solid #d65a31;
+    padding: 10px;
+    font-family: 'Cairo', sans-serif;
+    margin-left: 20px;
+    float: left;
+    margin-top: 10px;
+}
+
+article section img {
+    border-bottom: 4px dashed #d65a31;
+    margin-bottom: 10px;
+    
+}
+
+article section .bilgi-info h3 {
+    font-size: 30px;
+    background-color: rgb(209, 203, 194);
+    border-bottom: 2px solid white;
+    /* display: inline-block; */
+    
+}
+
+.telefon-info h3 {
+    font-size: 30px;
+    background-color: rgb(209, 203, 194);
+    border-bottom: 2px solid white;
+    /* display: inline-block; */
+}
+
+.tablet-info h3 {
+    font-size: 30px;
+    background-color: rgb(209, 203, 194);
+    border-bottom: 2px solid white;
+    /* display: inline-block; */
+}
+
+article section .bilgi-info p {
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+    
+}
+
+.telefon-info p {
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.tablet-info p {
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+article section .bilgi-fiyat .s {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    
+}
+
+.telfon-fiyat .s {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.tablet-fiyat .s {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+article section .bilgi-fiyat p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #d65a31;
+}
+
+.telfon-fiyat p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #d65a31;
+}
+
+.tablet-fiyat p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #d65a31;
+}
+
+article section .buy-now button {
+    background-color: rgb(169, 236, 238);
+    margin-top: 10px;
+    padding: 0px 5px;
+    font-size: 23px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-right: 5px solid rgb(255, 0, 0);
+    cursor: pointer;
+
+}
+
+article section .buy-now button:hover {
+    color: #d65a31 ;
+}
+
+.el-p {
+    width: 320px;
+    height: 75px;
+    overflow: hidden; /* العناصر الخارجة من الاطار */
+    text-overflow: ellipsis;
+    line-height: 1.2;  /* المسافة بين السطور */
+
+}
+
+
+
+/* start about */
+.about {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 340px;
+    background-color: rgb(231, 231, 231);
+    padding: 10px 0;
+    padding-bottom: 30px;
+    border-top: 2px solid black;
+    border-bottom:  2px solid black;
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.about img {
+    float: left;
+    margin-left: 60px;
+    margin-right: 100px;
+}
+
+.about h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.about p {
+    margin-top: 25px;
+    font-size: 25px;
+    width: 95%;
+    line-height: 1.6;
+    padding-top: 30px;
+
+}
+
+
+/* start footer */
+
+footer {
+    background-color: #222831;
+    color: #eeeeee;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+    text-transform: uppercase;
+}
+.clear {
+    clear: both;
+}
+
